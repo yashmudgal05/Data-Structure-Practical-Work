@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 struct queue
 {
     int size;
@@ -7,12 +8,14 @@ struct queue
     int rear;
     int * Q;
 };
+
 void create(struct queue * q, int size);
 void enqueueRear(struct queue * q, int x);
 void enqueueFront(struct queue * q, int x);
 int dequeueFront(struct queue * q);
 int dequeRear(struct queue * q);
 void display(struct queue q);
+
 int main()
 {
     struct queue q;
